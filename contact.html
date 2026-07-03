@@ -54,13 +54,9 @@ fees, scholarships, and career guidance.
 <h3>🏫 Academy Address</h3>
 
 <p>
-
 Bright Future Academy<br>
-
 Hyderabad, Telangana<br>
-
 India - 500001
-
 </p>
 
 </div>
@@ -99,7 +95,7 @@ India - 500001
 
 <h2>📩 Send Us a Message</h2>
 
-<form>
+<form onsubmit="return false;">
 
 <label>Your Name</label>
 <input type="text" placeholder="Enter your full name">
@@ -160,7 +156,6 @@ India - 500001
 </div>
 
 </section>
-
 <section>
 
 <h2>📍 Academy Location</h2>
@@ -192,6 +187,27 @@ Bright Future Academy is located in the heart of Hyderabad with easy access to b
 <p>© 2026 Bright Future Academy | All Rights Reserved.</p>
 
 </footer>
+
+<!-- Chat Widget Start -->
+
+<div class="chat-widget">
+
+    <div class="chat-header">
+        💬 Chat Support
+    </div>
+
+    <div class="chat-body" id="chatBody">
+        <p><strong>Academy:</strong> Hello! Welcome to Bright Future Academy. How can we help you?</p>
+    </div>
+
+    <div class="chat-input">
+        <input type="text" id="message" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+</div>
+
+<!-- Chat Widget End -->
 
 <script src="script.js"></script>
 
