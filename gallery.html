@@ -3,253 +3,240 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Gallery | Bright Future Academy</title>
+    <title>Gallery | Bright Future Academy</title>
 
-<meta name="description" content="Gallery - Bright Future Academy">
+    <meta name="description" content="Gallery - Bright Future Academy">
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
+<body>
+
+<header>
+
+    <h1>🎓 Bright Future Academy</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+<section class="hero">
+
+    <h2>📸 Academy Gallery</h2>
+
+    <p>
+        Take a look at our modern campus, smart classrooms,
+        computer laboratories, student activities, and
+        memorable academy events.
+    </p>
+
+</section>
+
+<section>
+
+    <h2>🏫 Our Campus</h2>
+
+    <div class="gallery">
+
+        <div class="card">
+
+            <img src="images/campus.jpg" alt="Academy Campus">
+
+            <h3>Main Campus</h3>
+
+            <p>
+                Our campus provides a peaceful and inspiring learning
+                environment with modern facilities.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <img src="images/classroom.jpg" alt="Smart Classroom">
+
+            <h3>Smart Classroom</h3>
+
+            <p>
+                Interactive classrooms equipped with projectors and
+                digital learning resources.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <img src="images/students.jpg" alt="Students">
+
+            <h3>Student Learning</h3>
+
+            <p>
+                Students actively participate in practical classes,
+                workshops, and group discussions.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2>💻 Learning Facilities</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>🖥 Computer Laboratory</h3>
+
+            <p>
+                Our modern computer labs are equipped with high-speed
+                internet, updated software, and the latest technology
+                for practical learning.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>📚 Digital Library</h3>
+
+            <p>
+                Students can access e-books, notes, study materials,
+                previous question papers, and online learning resources.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>🎥 Smart Classrooms</h3>
+
+            <p>
+                Every classroom supports interactive teaching with
+                multimedia presentations and practical demonstrations.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2>🎉 Academy Events</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>🏆 Workshops</h3>
+
+            <p>
+                Regular workshops help students improve technical and
+                practical skills through hands-on learning.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>🎓 Certificate Distribution</h3>
+
+            <p>
+                Students receive certificates after successfully
+                completing their courses and practical projects.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>🎊 Cultural Programs</h3>
+
+            <p>
+                The academy organizes annual celebrations,
+                competitions, seminars, and cultural activities.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2>📷 Gallery Highlights</h2>
+
+    <div class="card full-card">
+
+        <p>
+            Bright Future Academy provides students with excellent
+            infrastructure, experienced faculty, practical training,
+            modern laboratories, digital classrooms, and a positive
+            learning environment. Our gallery reflects the dedication,
+            enthusiasm, and achievements of our students throughout
+            their academic journey.
+        </p>
+
+    </div>
+
+</section>
+<!-- Footer -->
+<footer>
+
+    <h3>🎓 Bright Future Academy</h3>
+
+    <p>Empowering Students Through Quality Education.</p>
+
+    <p>📍 Hyderabad, Telangana, India</p>
+
+    <p>📞 +91 9876543210</p>
+
+    <p>📧 info@brightfutureacademy.com</p>
+
+    <hr>
+
+    <p>Thank you for visiting Bright Future Academy.</p>
+
+    <p>© 2026 Bright Future Academy | All Rights Reserved.</p>
+
+</footer>
+
+<!-- Chat Widget -->
 <div class="chat-widget">
-    <div class="chat-header">💬 Chat Support</div>
+
+    <div class="chat-header">
+        💬 Chat Support
+    </div>
 
     <div class="chat-body" id="chatBody">
-        <p><strong>Academy:</strong> Hello! How can we help you?</p>
+        <p><strong>Academy:</strong> Hello! Welcome to Bright Future Academy. How can we help you today?</p>
     </div>
 
     <div class="chat-input">
         <input type="text" id="message" placeholder="Type your message...">
         <button onclick="sendMessage()">Send</button>
     </div>
-</div>
-
-<script>
-function sendMessage() {
-    let input = document.getElementById("message");
-    let chat = document.getElementById("chatBody");
-
-    if (input.value.trim() !== "") {
-        chat.innerHTML += "<p><strong>You:</strong> " + input.value + "</p>";
-        chat.innerHTML += "<p><strong>Academy:</strong> Thank you! We will contact you soon.</p>";
-        input.value = "";
-        chat.scrollTop = chat.scrollHeight;
-    }
-}
-</script><body>
-
-<header>
-
-<h1>🎓 Bright Future Academy</h1>
-
-<nav>
-
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="courses.html">Courses</a>
-<a href="gallery.html">Gallery</a>
-<a href="contact.html">Contact</a>
-
-</nav>
-
-</header>
-
-<section class="hero">
-
-<h2>📸 Academy Gallery</h2>
-
-<p>
-Take a look at our modern campus, smart classrooms, computer laboratories,
-student activities, and memorable academy events.
-</p>
-
-</section>
-
-<section>
-
-<h2>🏫 Our Campus</h2>
-
-<div class="gallery">
-
-<div class="card">
-
-<img src="campus.jpg" alt="Academy Campus">
-
-<h3>Main Campus</h3>
-
-<p>
-
-Our campus provides a peaceful and inspiring learning environment with modern facilities.
-
-</p>
 
 </div>
 
-<div class="card">
-
-<img src="classroom.jpg" alt="Smart Classroom">
-
-<h3>Smart Classroom</h3>
-
-<p>
-
-Interactive classrooms equipped with projectors and digital learning resources.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<img src="students.jpg" alt="Students">
-
-<h3>Student Learning</h3>
-
-<p>
-
-Students actively participate in practical classes, workshops, and group discussions.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>💻 Learning Facilities</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>🖥 Computer Laboratory</h3>
-
-<p>
-
-Our modern computer labs are equipped with high-speed internet, updated software, and the latest technology for practical learning.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>📚 Digital Library</h3>
-
-<p>
-
-Students can access e-books, notes, study materials, previous question papers, and online learning resources.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>🎥 Smart Classrooms</h3>
-
-<p>
-
-Every classroom supports interactive teaching with multimedia presentations and practical demonstrations.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>🎉 Academy Events</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>🏆 Workshops</h3>
-
-<p>
-
-Regular workshops help students improve technical and practical skills through hands-on learning.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>🎓 Certificate Distribution</h3>
-
-<p>
-
-Students receive certificates after successfully completing their courses and practical projects.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>🎊 Cultural Programs</h3>
-
-<p>
-
-The academy organizes annual celebrations, competitions, seminars, and cultural activities.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>📷 Gallery Highlights</h2>
-
-<div class="card full-card">
-
-<p>
-
-Bright Future Academy provides students with excellent infrastructure, experienced faculty, practical training, modern laboratories, digital classrooms, and a positive learning environment. Our gallery reflects the dedication, enthusiasm, and achievements of our students throughout their academic journey.
-
-</p>
-
-</div>
-
-</section>
-
-<footer>
-
-<h3>🎓 Bright Future Academy</h3>
-
-<p>Empowering Students Through Quality Education.</p>
-
-<p>📍 Hyderabad, Telangana, India</p>
-
-<p>📞 +91 9876543210</p>
-
-<p>📧 info@brightfutureacademy.com</p>
-
-<hr>
-
-<p>Thank you for visiting Bright Future Academy.</p>
-
-<p>© 2026 Bright Future Academy | All Rights Reserved.</p>
-
-</footer>
-
+<!-- JavaScript -->
 <script src="script.js"></script>
 
 </body>
-
 </html>
